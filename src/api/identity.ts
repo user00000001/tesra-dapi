@@ -1,4 +1,4 @@
-import { OntIdAttribute, OntIdDDO } from './types';
+import { TstIdAttribute, TstIdDDO } from './types';
 
 export interface IdentityApi {
   /**
@@ -14,7 +14,7 @@ export interface IdentityApi {
    * @param identity Arbitrary identity
    * @throws MALFORMED_IDENTITY
    */
-  getDDO({ identity }: { identity: string }): Promise<OntIdDDO>;
+  getDDO({ identity }: { identity: string }): Promise<TstIdDDO>;
 
   /**
    * Adds attributes to the user identity.
@@ -22,7 +22,7 @@ export interface IdentityApi {
    * @param attributes Attributes to add
    * @throws NO_IDENTITY
    */
-  addAttributes({ attributes }: { attributes: OntIdAttribute[] }): Promise<void>;
+  addAttributes({ attributes }: { attributes: TstIdAttribute[] }): Promise<void>;
 
   /**
    * Removes attributes from the user identity.

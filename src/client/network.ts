@@ -43,8 +43,8 @@ export const networkApi: NetworkApi = {
     return call<boolean>('network.isConnected');
   },
 
-  getUnboundOng(args) {
-    return call<string>('network.getUnboundOng', args);
+  getUnboundTsg(args) {
+    return call<string>('network.getUnboundTsg', args);
   },
   getContract(args) {
     return call<Contract>('network.getContract', args);
@@ -65,8 +65,8 @@ export const networkApi: NetworkApi = {
   getGasPrice() {
     return call<GasPrice>('network.getGasPrice');
   },
-  getGrantOng(args) {
-    return call<string>('network.getGrantOng', args);
+  getGrantTsg(args) {
+    return call<string>('network.getGrantTsg', args);
   },
   getMempoolTxCount() {
     return call<number[]>('network.getMempoolTxCount');

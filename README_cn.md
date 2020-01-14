@@ -1,31 +1,31 @@
-<h1 align="center"> ontology dApi </h1>
+<h1 align="center"> tesra dApi </h1>
 
 [English](README.md) / 中文
 
-# ontology-dapi
+# tesra-dapi
 
-DAPI是基于Ontology blockchain开发dApp的轻量级去中心化API。本工程是根据OEP-6实现了dAPI ，请参考[OEP-6](https://github.com/backslash47/OEPs/blob/oep-dapp-api/OEP-6/OEP-6.mediawiki) 协议。
+DAPI是基于Tesra blockchain开发dApp的轻量级去中心化API。本工程是根据OEP-6实现了dAPI ，请参考[OEP-6](https://github.com/user00000001/OEPs/blob/oep-dapp-api/OEP-6/OEP-6.mediawiki) 协议。
 
-使用前请先安装 **dAPI provider** . 比如 [Cyano Wallet](https://github.com/OntologyCommunityDevelopers/cyano-wallet).
+使用前请先安装 **dAPI provider** . 比如 [Tesra Wallet](https://github.com/TesraSupernet/tesra-wallet).
 
 dAPI使用TypeScript实现, 同时也支持在JavaScript工程中使用.
 
 ## 如何使用 
-ontology-dapi 可以作为 CommonJS/ES6 模块或在网页中直接使用. 
+tesra-dapi 可以作为 CommonJS/ES6 模块或在网页中直接使用. 
 
 ### 安装 CommonJS/ES 模块
 ```
-npm install ontology-dapi
+npm install tesra-dapi
 ```
 
 ### 导入 CommonJS
 ```
-var client = require('ontology-dapi').client;
+var client = require('tesra-dapi').client;
 ```
 
 ### 导入 ES6 模块
 ```
-import { client } from 'ontology-dapi';
+import { client } from 'tesra-dapi';
 ```
 
 ### Web require
@@ -43,19 +43,19 @@ var client = dApi.client;
 dApp 先注册 **dAPI provider**的客户端.
 
 ```
-import { client } from 'ontology-dapi';
+import { client } from 'tesra-dapi';
 
 client.registerClient({});
 ```
 
 ## 使用例子
 
-请参考例子， [EXAMPLES.md](EXAMPLES.md) 或 [demo app](https://github.com/OntologyCommunityDevelopers/ontology-dapi-demo)
+请参考例子， [EXAMPLES.md](EXAMPLES.md) 或 [demo app](https://github.com/TesraSupernet/tesra-dapi-demo)
 
 # 文档
 
 所有dAPI方法分成这几个模块: **asset**, **identity**, **message**, **network**, **provider**, **smartContract** and **utils**.
-方法定义请参考 [OEP-6](https://github.com/backslash47/OEPs/blob/oep-dapp-api/OEP-6/OEP-6.mediawiki).
+方法定义请参考 [OEP-6](https://github.com/user00000001/OEPs/blob/oep-dapp-api/OEP-6/OEP-6.mediawiki).
 
 # Build
 
@@ -70,8 +70,8 @@ client.registerClient({});
 
 #### 下载
 ```
-git clone 'https://github.com/OntologyCommunityDevelopers/ontology-dapi.git'
-cd ontology-dapi
+git clone 'https://github.com/TesraSupernet/tesra-dapi.git'
+cd tesra-dapi
 ```
 
 #### 安装
@@ -101,7 +101,7 @@ npm run build:prod
 
 ## 作者
 
-* **Matus Zamborsky** - *Initial work* - [Backslash47](https://github.com/backslash47)
+* **user00000001** - *Initial work* - [user00000001](https://github.com/user00000001)
 
 ## License
 

@@ -1,6 +1,6 @@
 export type NetworkType = 'MAIN' | 'TEST' | 'PRIVATE';
 
-export type Asset = 'ONT' | 'ONG' | string;
+export type Asset = 'TST' | 'TSG' | string;
 
 export enum TransactionType {
   BookKeeper = 2,
@@ -77,20 +77,20 @@ export interface MerkleProof {
 }
 
 export interface Balance {
-  ONT: string;
-  ONG: string;
+  TST: string;
+  TSG: string;
 
   [key: string]: string;
 }
 
-export interface OntIdAttribute {
+export interface TstIdAttribute {
   key: string;
   type: string;
   value: string;
 }
 
-export interface OntIdDDO {
-  attributes: OntIdAttribute[];
+export interface TstIdDDO {
+  attributes: TstIdAttribute[];
 }
 
 export interface Provider {
@@ -136,4 +136,3 @@ export interface GasPrice {
   gasPrice: number;
   height: number;
 }
-

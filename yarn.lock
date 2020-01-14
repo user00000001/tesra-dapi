@@ -16,10 +16,6 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@ont-community/window-post-message-proxy@^0.2.14":
-  version "0.2.14"
-  resolved "https://registry.yarnpkg.com/@ont-community/window-post-message-proxy/-/window-post-message-proxy-0.2.14.tgz#e3b1fe1b1558d7aedbbc1d0053e35f21cd9dc05e"
-
 "@types/base-x@^1":
   version "1.0.30"
   resolved "https://registry.yarnpkg.com/@types/base-x/-/base-x-1.0.30.tgz#10d078f9fad69d96c8f0dfe80137012a4c692ad7"
@@ -4939,10 +4935,10 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typescript@^2.9.1:
+typescript@^2.9.2:
   version "2.9.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.9.2.tgz#1cbf61d05d6b96269244eb6a3bce4bd914e0f00c"
-  integrity sha512-Gr4p6nFNaoufRIY4NMdpQRNmgxVIGMs4Fcu/ujdYk3nAZqk7supzBE9idmvfZIlH/Cuj//dvi+019qEue9lV0w==
+  resolved "https://registry.npm.taobao.org/typescript/download/typescript-2.9.2.tgz#1cbf61d05d6b96269244eb6a3bce4bd914e0f00c"
+  integrity sha1-HL9h0F1rliaSROtqO85L2RTg8Aw=
 
 uglify-js@^3.1.4:
   version "3.5.15"
@@ -5198,6 +5194,10 @@ wide-align@^1.1.0:
   resolved "https://registry.yarnpkg.com/wide-align/-/wide-align-1.1.3.tgz#ae074e6bdc0c14a431e804e624549c633b000457"
   dependencies:
     string-width "^1.0.2 || 2"
+
+"window-post-message-proxy@git+http://113.204.194.92:9000/independent/window-post-message-proxy.git":
+  version "0.2.14"
+  resolved "git+http://113.204.194.92:9000/independent/window-post-message-proxy.git#646dfd841e4106f819795a257a907812759f7e64"
 
 wordwrap@~0.0.2:
   version "0.0.3"

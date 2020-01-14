@@ -25,7 +25,7 @@ export interface NetworkApi {
         address: string;
     }): Promise<Balance>;
     isConnected(): Promise<boolean>;
-    getUnboundOng({ address }: {
+    getUnboundTsg({ address }: {
         address: string;
     }): Promise<string>;
     getContract({ hash }: {
@@ -44,7 +44,7 @@ export interface NetworkApi {
         height: number;
     }): Promise<BlockWithTxList>;
     getGasPrice(): Promise<GasPrice>;
-    getGrantOng({ address }: {
+    getGrantTsg({ address }: {
         address: string;
     }): Promise<string>;
     getMempoolTxCount(): Promise<number[]>;

@@ -1,31 +1,31 @@
-<h1 align="center"> ontology dApi </h1>
+<h1 align="center"> Tesra dApi </h1>
 
 English / [中文](README_cn.md)
 
-# ontology-dapi
+# tesra-dapi
 
-API for dApps on Ontology blockchain. This is an implementation of dAPI from [OEP-6](https://github.com/backslash47/OEPs/blob/oep-dapp-api/OEP-6/OEP-6.mediawiki) communication protocol.
+API for dApps on Tesra blockchain. This is an implementation of dAPI from [OEP-6](https://github.com/user00000001/OEPs/blob/oep-dapp-api/OEP-6/OEP-6.mediawiki) communication protocol.
 
-It is necessary to have installed suitable **dAPI provider** . Reference implementation is [Cyano Wallet](https://github.com/OntologyCommunityDevelopers/cyano-wallet).
+It is necessary to have installed suitable **dAPI provider** . Reference implementation is [Tesra Wallet](https://github.com/TesraSupernet/tesra-wallet).
 
 The library is written in TypeScript, so all the methods and objects are typed. It is therefore usable in TypeScript projects as well as vanilla JavaScript projects.
 
 ## How to use 
-ontology-dapi can be used as CommonJS/ES6 module or directly referencing in web page html. 
+tesra-dapi can be used as CommonJS/ES6 module or directly referencing in web page html. 
 
 ### Install CommonJS/ES module
 ```
-npm install ontology-dapi
+npm install tesra-dapi
 ```
 
 ### Import CommonJS
 ```
-var client = require('ontology-dapi').client;
+var client = require('tesra-dapi').client;
 ```
 
 ### Import ES6 module
 ```
-import { client } from 'ontology-dapi';
+import { client } from 'tesra-dapi';
 ```
 
 ### Web require
@@ -34,28 +34,28 @@ The browser.js file under the '/lib' folder needs to be referenced from the page
 <script src="./lib/browser.js"></script>
 ```
 
-The use of the code is required under the global namespace of Ont.
+The use of the code is required under the global namespace of Tst.
 ```
 var client = dApi.client;
 ```
 
 ### Initialisation
-dApp needs to register itself as a client with the ontology-dapi library to enable the communication.
+dApp needs to register itself as a client with the tesra-dapi library to enable the communication.
 
 ```
-import { client } from 'ontology-dapi';
+import { client } from 'tesra-dapi';
 
 client.registerClient({});
 ```
 
 ## Usage
 
-Examples of usage can be found in [EXAMPLES.md](EXAMPLES.md) or in a [demo app](https://github.com/OntologyCommunityDevelopers/ontology-dapi-demo)
+Examples of usage can be found in [EXAMPLES.md](EXAMPLES.md) or in a [demo app](https://github.com/TesraSupernet/tesra-dapi-demo)
 
 # Documentation
 
 All the methods of dAPI from OEP-6 are organised into smaller units: **asset**, **identity**, **message**, **network**, **provider**, **smartContract** and **utils**.
-The definitions of the methods can be found directly in the [OEP-6](https://github.com/backslash47/OEPs/blob/oep-dapp-api/OEP-6/OEP-6.mediawiki).
+The definitions of the methods can be found directly in the [OEP-6](https://github.com/user00000001/OEPs/blob/oep-dapp-api/OEP-6/OEP-6.mediawiki).
 
 # Build
 
@@ -70,8 +70,8 @@ Execute these commands in the project's root directory:
 
 #### Download
 ```
-git clone 'https://github.com/OntologyCommunityDevelopers/ontology-dapi.git'
-cd ontology-dapi
+git clone 'https://github.com/TesraSupernet/tesra-dapi.git'
+cd tesra-dapi
 ```
 
 #### Install
@@ -104,7 +104,7 @@ You will get the packaged code under '/lib'
 
 ## Authors
 
-* **Matus Zamborsky** - *Initial work* - [Backslash47](https://github.com/backslash47)
+* **user00000001** - *Initial work* - [user00000001](https://github.com/user00000001)
 
 ## License
 

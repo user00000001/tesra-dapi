@@ -1,5 +1,5 @@
 import { IdentityApi } from '../api/identity';
-import { OntIdDDO } from '../api/types';
+import { TstIdDDO } from '../api/types';
 import { call } from './proxy';
 
 export const identityApi: IdentityApi = {
@@ -7,7 +7,7 @@ export const identityApi: IdentityApi = {
     return call<string>('identity.getIdentity');
   },
   getDDO(args) {
-    return call<OntIdDDO>('identity.getDDO', args);
+    return call<TstIdDDO>('identity.getDDO', args);
   },
   addAttributes(args) {
     return call<void>('identity.addAttributes', args);

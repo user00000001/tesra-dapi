@@ -1,5 +1,5 @@
 export declare type NetworkType = 'MAIN' | 'TEST' | 'PRIVATE';
-export declare type Asset = 'ONT' | 'ONG' | string;
+export declare type Asset = 'TST' | 'TSG' | string;
 export declare enum TransactionType {
     BookKeeper = 2,
     Claim = 3,
@@ -65,17 +65,17 @@ export interface MerkleProof {
     TargetHashes: string[];
 }
 export interface Balance {
-    ONT: string;
-    ONG: string;
+    TST: string;
+    TSG: string;
     [key: string]: string;
 }
-export interface OntIdAttribute {
+export interface TstIdAttribute {
     key: string;
     type: string;
     value: string;
 }
-export interface OntIdDDO {
-    attributes: OntIdAttribute[];
+export interface TstIdDDO {
+    attributes: TstIdAttribute[];
 }
 export interface Provider {
     name: string;
